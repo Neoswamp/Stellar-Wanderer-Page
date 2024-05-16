@@ -107,7 +107,7 @@ function showPlanetInfo(planetName) {
             <button class="close-button" onclick="closePlanetInfo()">X</button>
             <h3>Sylvaris-3</h3>
             <p>Sylvaris-3 es un mundo desértico ubicado en el borde exterior de la galaxia. Su superficie está dominada por vastos desiertos de arena dorada, interrumpidos por cañones escarpados y mesetas rocosas. El planeta es conocido por sus extremas condiciones climáticas y su paisaje desolado.</p>
-            <img src="/assets/imgs/desert-planet.jpg" alt="Planeta 1" class="planet-info-img">
+            <img src="./assets/imgs/desert-planet.jpg" alt="Planeta 1" class="planet-info-img">
         `;
         planetInfoContainer.appendChild(planetInfo);
     }
@@ -118,7 +118,7 @@ function showPlanetInfo(planetName) {
             <button class="close-button" onclick="closePlanetInfo()">X</button>
             <h3>Thalassia</h3>
             <p>Un mundo acuático habitado por una sociedad pacífica y avanzada de seres anfibios. Thalassia es conocida por su belleza submarina y su sabiduría ancestral.</p>
-            <img src="/assets/imgs/water-planet.jpg" alt="Planeta 2" class="planet-info-img">
+            <img src="./assets/imgs/water-planet.jpg" alt="Planeta 2" class="planet-info-img">
         `;
         planetInfoContainer.appendChild(planetInfo);
     }
@@ -129,7 +129,7 @@ function showPlanetInfo(planetName) {
             <button class="close-button" onclick="closePlanetInfo()">X</button>
             <h3>Aetheria</h3>
             <p>Aetheria es un mundo misterioso ubicado en los confines de la galaxia. Conocido por sus vastos paisajes salvajes y su atmósfera etérea, Aetheria está envuelto en leyendas y mitos antiguos. Se dice que es el hogar de antiguas ruinas y tecnologías perdidas.</p>
-            <img src="/assets/imgs/ruins-planet.jpg" alt="Planeta 3" class="planet-info-img">
+            <img src="./assets/imgs/ruins-planet.jpg" alt="Planeta 3" class="planet-info-img">
         `;
         planetInfoContainer.appendChild(planetInfo);
     }
