@@ -19,9 +19,9 @@ light.position.set(5, 5, 5);
 scene.add(light);
 
 const textureLoader = new THREE.TextureLoader();
-const texture1 = textureLoader.load('/assets/textures/texturep1.jpg');
-const texture2 = textureLoader.load('/assets/textures/texturep2.png');
-const texture3 = textureLoader.load('/assets/textures/texturep3.png');
+const texture1 = textureLoader.load('./assets/textures/texturep1.jpg');
+const texture2 = textureLoader.load('./assets/textures/texturep2.png');
+const texture3 = textureLoader.load('./assets/textures/texturep3.png');
 
 const geometry1 = new THREE.SphereGeometry(1, 32, 32);
 const material1 = new THREE.MeshPhongMaterial({ map: texture1 });
