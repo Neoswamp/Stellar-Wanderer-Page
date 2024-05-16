@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-color: #151515;
+    --white: #fff;
+    --primary-color: #C73659;
+    --shadow-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--bg-color);
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    align-items: center;
+}
+
+.nav {
+    padding: 1rem;
+}
+
+.nav__link {
+    margin-right: 1rem;
+}
+
+.nav__link:hover {
+    color: #85ec49;
+    transition: color 0.3s ease, color 0.3s ease;
+}
+
+.main-container {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+    color: var(--white);
+}
+
+.title {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.title__keyword {
+    color: var(--primary-color);
+}
+
+.description {
+    font-weight: light;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.photo-img {
+    max-width: 800px;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.content-container {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+}
+
+.webcomic,
+.video-game {
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.webcomic__content,
+.video-game__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.webcomic__title,
+.video-game__title {
+    font-size: 2em;
+}
+
+.webcomic__keyword,
+.video-game__keyword {
+    color: var(--primary-color);
+}
+
+.webcomic__description,
+.video-game__description {
+    max-width: 800px;
+    margin: 0 1rem 1.5rem 1rem;
+    line-height: 1.4em;
+    text-align: justify;
+    text-align: center;
+}
+
+.webcomic__img,
+.video-game__img {
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.webcomic__btn-read {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.webcomic__btn-read:hover {
+    transform: scale(1.05);
+    background-color: #8d253d;
+}
+
+.webcomic__link,
+.video-game__link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.webcomic {
+    box-shadow: 0px 5px 15px var(--shadow-color);
+}
+
+.video-game {
+    box-shadow: 0px 5px 15px var(--shadow-color);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer__info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer__info p {
+    margin-bottom: 0.5rem;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icon {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon img {
+    width: 40px;
+    height: auto;
+    margin: 1rem 0.5rem;
+    transition: filter 0.3s ease;
+}
+
+.social-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(90deg);
+}
+
+#planet-scene {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#planet-info-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.planet-info {
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+    color: var(--white);
+    background-color: rgba(199, 54, 89, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+.planet-info-img {
+    border-radius: 5px;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.close-button:hover {
+    color: #151515;
+    transform: scale(1.2);
+}
+
+
+
+/* Media queries para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        margin-top: 1rem;
+    }
+
+    .nav__link {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .main-container {
+        margin: 1rem;
+    }
+
+    .photo-img {
+        max-width: 100%;
+    }
+
+    .content-container {
+        margin: 1rem;
+    }
+
+    .webcomic,
+    .video-game {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .webcomic,
+    .video-game p {
+        font-size: 0.9em;
+    }
+
+    #planet-info-container {
+        max-width: 90%;
+    }
+
+    .planet-info {
+        font-size: 14px;
+        width: 300px;
+    }
+
+    .planet-info-img {
+        width: 300px;
+    }
+
+}
