@@ -257,6 +257,70 @@ a {
     transform: scale(1.2);
 }
 
+.about-section,
+.characters-section,
+.secondary-characters-section,
+.report-section {
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px var(--shadow-color);
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+.characters-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.characters-list li {
+    margin-bottom: 0.5rem;
+}
+
+.download-container {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.report-download-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.report-download-link:hover {
+    transform: scale(1.05);
+    background-color: #8d253d;
+}
+
+
+
 
 
 /* Media queries para pantallas más pequeñas */
